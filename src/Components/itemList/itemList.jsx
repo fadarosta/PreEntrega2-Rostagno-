@@ -1,19 +1,20 @@
-import item from './Components/item/item.jsx'
+// src/components/ItemList.jsx
+import Item from "./Item";
 
-const itemList = ({ packsDeClases }) => {
-    return(
-        <>
-        {packs.map((pack) => {
-            return (
-                <div key={pack.id}>
-                    <h3>{pack.title}</h3>
-                    <p>{pack.price}</p>
-                    <p>{pack.descriprion}</p>
-                </div>
-            )
-        })}
-    </>
-    )
-}
+const ItemList = ({ items }) => {
+    return (
+        <div>
+            {items.map((pack) => (
+                <Item
+                    key={pack.id}
+                    title={pack.title}
+                    price={pack.price}
+                    description={pack.description}
+                    pictureUrl={pack.pictureUrl}
+                />
+            ))}
+        </div>
+    );
+};
 
-export default itemList
+export default ItemList;
