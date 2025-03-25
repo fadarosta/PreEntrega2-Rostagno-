@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import ItemList from '../itemList/itemList';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () => {
     const [packs, setPacks] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simulación de llamada a API con promesa
         const clasesPromise = new Promise((resolve) => {
             const packsDeClases = [
                 {

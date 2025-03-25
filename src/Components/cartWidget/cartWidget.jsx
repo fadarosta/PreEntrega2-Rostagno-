@@ -1,11 +1,14 @@
 import Badge from '@mui/material/Badge';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
     return (
-        <Badge badgeContent={1} color="success">
-            <ShoppingBasketIcon color="action" />
-        </Badge>
+        <Link to="/cart">
+            <Badge badgeContent={1} color="success">
+                <ShoppingBasketIcon color="action" />
+            </Badge>
+        </Link>
     )
 }
 

@@ -1,4 +1,3 @@
-// src/components/Item.jsx
 const Item = ({ title, price, description, pictureUrl }) => {
     return (
         <div>

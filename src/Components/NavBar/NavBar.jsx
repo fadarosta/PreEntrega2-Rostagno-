@@ -4,7 +4,8 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import CartWidget from "../cartWidget/cartWidget"
+import CartWidget from "../CartWidget/CartWidget";
+import { Link, NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -28,7 +29,7 @@ const NavBar = () => {
                             <NavLink to='category/Packs de Clases'>
                                 Packs de Clases
                             </NavLink>
-                            <NavLink to='category/Agenda de Clases' >
+                            <NavLink to='category/Agenda de Clases'>
                                 Agenda de Clases
                             </NavLink>
                             <CartWidget />
